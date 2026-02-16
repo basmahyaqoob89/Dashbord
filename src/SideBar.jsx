@@ -7,7 +7,7 @@ function SideBar( { isOpen, toggleSidebar }) {
 
   return (
     /**div الي ماسكه الكل */
-    <aside className={`${isOpen ? "w-60" : "w-0 md:w-20"} ${isOpen ? "block" : "hidden md:block"} md:px-4 h-screen fixed md:relative z-50 bg-white px-4 py-3 shadow-md border-r border-gray-100`}>
+    <aside className={`${isOpen ? "w-60" : "w-0 md:w-20"} ${isOpen ? "block" : "hidden md:block"} md:px-4 h-full fixed md:relative z-50 bg-white px-4 py-3 shadow-md border-r border-gray-100`}>
       
       <div className="font-bold flex flex-row items-center gap-2 cursor-pointer" onClick={toggleSidebar}>
         <IoIosMenu className="text-2xl ml-2" />
